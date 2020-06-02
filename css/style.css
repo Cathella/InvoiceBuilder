@@ -155,3 +155,33 @@ select {
 .tot-act li p{
   margin-top: 3em;
 }
+
+.summary li {
+  width: 50%;
+  text-transform: capitalize;
+}
+
+.summary ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+ul.column {
+  flex-direction: column;
+}
+
+.column li {
+  margin-top: 1em;
+}
+
+.summary a {
+  text-decoration: none;
+  color: #1155cc;
+}
+
+.final-total {
+  margin: 1em 0;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  padding-top: 1em;
+}
