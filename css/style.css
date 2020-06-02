@@ -5,6 +5,11 @@ body {
   font-family: 'Manrope', sans-serif;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 form,
 select,
 input,
@@ -15,7 +20,7 @@ textarea {
 
 .date-part label,
 .date-part select {
-  font-size: .85em;
+  font-size: 13px;
 }
 
 .container {
@@ -48,7 +53,7 @@ textarea {
 
 .main-form h1 {
   text-align: center;
-  font-size: 1.65em;
+  font-size: 23px;
 }
 
 .main-form h1 span {
@@ -71,7 +76,7 @@ textarea {
   border: none;
   background: #f5f7f9;
   border-radius: 4px;
-  padding: .4em .7em;
+  padding: .6em .7em;
 }
 
 .bill-from,
@@ -86,26 +91,9 @@ textarea {
 .bill-to input,
 .bill-from textarea,
 .bill-to textarea {
-  font-size: .85em;
+  font-size: 13px;
   font-weight: bold;
   margin-bottom: .7em;
-}
-
-table {
-  width: 100%
-}
-
-th {
-  text-align: left;
-  text-transform: uppercase;
-  font-size: .8em;
-  padding: .65em 0;
-}
-
-.th-row {
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
-  /* background: yellow; */
-  padding-bottom: 1em;
 }
 
 .aside-btn {
@@ -118,7 +106,52 @@ select {
   background: transparent;
 }
 
-th.item {
+.headers > ul {
+  display: flex;
+  /* align-items: center; */
+  list-style: none;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 1em 0;
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.item {
+  width: 48%;
+  /* background: green */
+}
+
+.item input {
+  width: 95%;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: .8em;
+}
+
+.qty-rate,
+.tot-act {
+  /* background: orange; */
+  display: flex;
+  list-style: none;
+  /* justify-content: space-between; */
+  width: 22%;
+}
+
+.qty-rate li,
+.tot-act li {
+  width: 50%;
+}
+
+.qty-rate li input,
+.tot-act li p {
   width: 48.5%;
-  background: orange;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.tot-act li p{
+  margin-top: 3em;
 }

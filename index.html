@@ -37,58 +37,45 @@
               <textarea name="name" placeholder="Who is this invoice to?"></textarea>
             </div>
           </div>
-          <div class="">
-            <table>
-              <tr class="th-row">
-                <th class="item">item</th>
-                <th>qty</th>
-                <th>rate</th>
-                <th>total</th>
-                <th>action</th>
-              </tr>
-              <tr>
-                <td>
-                  <input type="text" placeholder="item name" name="" value="">
-                </td>
-                <td>
-                  <input type="text" name="" value="1">
-                </td>
-                <td>
-                  <input type="text" name="" value="0.00">
-                </td>
-                <td>
-                  <p>$0.00</p>
-                </td>
-                <td>...</td>
-              </tr>
-              <tr>
-                <td>
-                  <textarea name="name" placeholder="item description"></textarea>
-                </td>
-                <td colspan="3"></td>
-              </tr>
-              <tr class="add-total">
-                <td colspan="2">
-                  <a href="#">Add Item</a>
-                </td>
-                <td colspan="2">
-                  <div class="">
-                    <p>Subtotal</p>
-                    <p>$0.00</p>
-                  </div>
-                  <a href="#">Add discount</a>
-                  <a href="#">Add tax</a>
-                  <div class="">
-                    <p>Total</p>
-                    <p>$0.00</p>
-                  </div>
-                </td>
-              </tr>
-            </table>
-            <div class="">
-              <h6>Notes</h6>
-              <textarea name="name" value="Thanks for Business!"></textarea>
-            </div>
+          <div class="headers">
+            <ul>
+              <li class="item">item</li>
+              <ul class="qty-rate">
+                <li>qty</li>
+                <li>rate</li>
+              </ul>
+              <ul class="tot-act">
+                <li>total</li>
+                <li>action</li>
+              </ul>
+            </ul>
+            <ul>
+              <li class="item">
+                <input type="text" placeholder="Item Name" name="" value="">
+                <input type="text" placeholder="Description" name="" value="">
+              </li>
+              <ul class="qty-rate">
+                <li>
+                  <input type="text" placeholder="" name="" value="1">
+                </li>
+                <li>
+                  <input type="text" placeholder="" name="" value="0.00">
+                </li>
+              </ul>
+              <ul class="tot-act">
+                <li>$0.00</li>
+                <li>...</li>
+              </ul>
+            </ul>
+            <ul>
+              <li><a href="#">Add Item</a></li>
+              <li>
+                <ul>
+                  <li>Subtotal</li>
+                  <li>$0.00</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="send-part">
