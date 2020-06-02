@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Invoice Builder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -28,12 +29,12 @@
             <div class="bill-from">
               <label for="">Bill from</label>
               <input type="text" name="email" value="" placeholder="Email">
-              <textarea name="name" rows="8" cols="80" placeholder="Who is this invoice from?"></textarea>
+              <textarea name="name" placeholder="Who is this invoice from?"></textarea>
             </div>
             <div class="bill-to">
               <label for="">Bill to</label>
               <input type="text" name="email" value="" placeholder="Email">
-              <textarea name="name" rows="8" cols="80" placeholder="Who is this invoice to?"></textarea>
+              <textarea name="name" placeholder="Who is this invoice to?"></textarea>
             </div>
           </div>
           <div class="">
@@ -47,8 +48,7 @@
               </tr>
               <tr>
                 <td>
-                  <input type="text" placeholder="iten name" name="" value="">
-                  <textarea name="name" placeholder="description" rows="8" cols="80"></textarea>
+                  <input type="text" placeholder="item name" name="" value="">
                 </td>
                 <td>
                   <input type="text" name="" value="1">
@@ -57,15 +57,21 @@
                   <input type="text" name="" value="0.00">
                 </td>
                 <td>
-                  <input type="text" name="" value="$0.00">
+                  <p>$0.00</p>
                 </td>
                 <td>...</td>
               </tr>
               <tr>
                 <td>
+                  <textarea name="name" placeholder="item description"></textarea>
+                </td>
+                <td colspan="3"></td>
+              </tr>
+              <tr class="add-total">
+                <td colspan="2">
                   <a href="#">Add Item</a>
                 </td>
-                <td>
+                <td colspan="2">
                   <div class="">
                     <p>Subtotal</p>
                     <p>$0.00</p>
@@ -81,13 +87,13 @@
             </table>
             <div class="">
               <h6>Notes</h6>
-              <textarea name="name" rows="8" cols="80" value="Thanks for Business!"></textarea>
+              <textarea name="name" value="Thanks for Business!"></textarea>
             </div>
           </div>
         </div>
         <div class="send-part">
           <button type="button" name="button">Send Invoice</button>
-          <div class="">
+          <div class="aside-btn">
             <button type="button" name="button">Preview</button>
             <button type="button" name="button">Download</button>
           </div>
