@@ -57,6 +57,13 @@ textarea {
 
 .billing-form {
   justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  padding: 1.6em 0;
+}
+
+.billing-form div {
+  width: 48.5%;
 }
 
 input,
@@ -64,13 +71,24 @@ textarea {
   border: none;
   background: #f5f7f9;
   border-radius: 4px;
-  padding: .2em .7em;
+  padding: .4em .7em;
 }
 
 .bill-from,
 .bill-to {
   display: flex;
   flex-direction: column;
+}
+
+.bill-from label,
+.bill-to label,
+.bill-from input,
+.bill-to input,
+.bill-from textarea,
+.bill-to textarea {
+  font-size: .85em;
+  font-weight: bold;
+  margin-bottom: .7em;
 }
 
 table {
@@ -80,6 +98,14 @@ table {
 th {
   text-align: left;
   text-transform: uppercase;
+  font-size: .8em;
+  padding: .65em 0;
+}
+
+.th-row {
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  /* background: yellow; */
+  padding-bottom: 1em;
 }
 
 .aside-btn {
@@ -90,4 +116,9 @@ th {
 select {
   border: none;
   background: transparent;
+}
+
+th.item {
+  width: 48.5%;
+  background: orange;
 }
