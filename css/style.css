@@ -13,6 +13,11 @@ textarea {
   font-family: 'Manrope', sans-serif;
 }
 
+.date-part label,
+.date-part select {
+  font-size: .85em;
+}
+
 .container {
   width: 80%;
   margin: 4em auto;
@@ -43,6 +48,11 @@ textarea {
 
 .main-form h1 {
   text-align: center;
+  font-size: 1.65em;
+}
+
+.main-form h1 span {
+  color: #8190a0;
 }
 
 .billing-form {
@@ -69,9 +79,15 @@ table {
 
 th {
   text-align: left;
+  text-transform: uppercase;
 }
 
 .aside-btn {
   display: flex;
   flex-direction: row;
+}
+
+select {
+  border: none;
+  background: transparent;
 }
