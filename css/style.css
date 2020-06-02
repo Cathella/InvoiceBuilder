@@ -185,3 +185,13 @@ ul.column {
   border-top: 1px solid rgba(0, 0, 0, .1);
   padding-top: 1em;
 }
+
+.notes p {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.notes textarea {
+  width: 96%;
+  height: 15px;
+}
