@@ -1,0 +1,41 @@
+body {
+  background-color: #f2f3f7;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 4em auto;
+}
+
+.builder,
+.date-part,
+.billing-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-form {
+  background: #fff;
+  border-radius: 6px;
+  margin-right: 1em;
+}
+
+.date-part {
+  justify-content: space-between;
+}
+
+.main-form h1 {
+  text-align: center;
+}
+
+.billing-form {
+
+}
+
+.bill-from,
+.bill-to {
+  display: flex;
+  flex-direction: column;
+}

@@ -2,13 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Invoice Builder</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container">
-      <div class="">
-        <div class="">
-          <div class="">
+      <form class="builder">
+        <div class="main-form">
+          <div class="date-part">
             <div class="">
               <label for="">Date</label>
               <select class="" name="">
@@ -23,13 +24,13 @@
             </div>
           </div>
           <h1>Invoice #001</h1>
-          <div class="">
-            <div class="">
+          <div class="billing-form">
+            <div class="bill-from">
               <label for="">Bill from</label>
               <input type="text" name="email" value="" placeholder="Email">
               <textarea name="name" rows="8" cols="80" placeholder="Who is this invoice from?"></textarea>
             </div>
-            <div class="">
+            <div class="bill-to">
               <label for="">Bill to</label>
               <input type="text" name="email" value="" placeholder="Email">
               <textarea name="name" rows="8" cols="80" placeholder="Who is this invoice to?"></textarea>
@@ -84,7 +85,7 @@
             </div>
           </div>
         </div>
-        <div class="">
+        <div class="send-part">
           <button type="button" name="button">Send Invoice</button>
           <div class="">
             <button type="button" name="button">Preview</button>
@@ -102,7 +103,7 @@
             <div>Notes <span>toggle</span></div>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   </body>
 </html>
