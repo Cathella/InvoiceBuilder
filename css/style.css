@@ -43,7 +43,7 @@ textarea {
   background: #fff;
   border-radius: 6px;
   margin-right: 1em;
-  width: 75%;
+  width: 70%;
   padding: 2em;
 }
 
@@ -194,4 +194,29 @@ ul.column {
 .notes textarea {
   width: 96%;
   height: 15px;
+}
+
+button {
+  background: white;
+  color: rgba(0, 0, 0, .7);
+  border: 1px solid rgba(0, 0, 0, .1);
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+  height: 38px;
+  margin-bottom: 1.2em;
+  border-radius: 4px;
+}
+
+.preview {
+  margin: 0 .5em 0 0;
+}
+
+.download {
+  margin: 0 0 0 .5em;
+}
+
+.send {
+  background: #1155cc;
+  color: #fff;
 }
