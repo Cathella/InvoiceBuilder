@@ -29,12 +29,12 @@
             <div class="bill-from">
               <label for="">Bill from</label>
               <input type="text" name="email" value="" placeholder="Email">
-              <textarea name="name" placeholder="Who is this invoice from?"></textarea>
+              <input type="text" name="name" value="" placeholder="Who is this invoice from?">
             </div>
             <div class="bill-to">
               <label for="">Bill to</label>
               <input type="text" name="email" value="" placeholder="Email">
-              <textarea name="name" placeholder="Who is this invoice to?"></textarea>
+              <input type="text" name="name" value="" placeholder="Who is this invoice to?">
             </div>
           </div>
           <div class="headers">
@@ -59,12 +59,12 @@
                   <input type="text" placeholder="" name="" value="1">
                 </li>
                 <li>
-                  <input type="text" placeholder="" name="" value="0.00">
+                  <input type="text" placeholder="" name="" value="0">
                 </li>
               </ul>
               <ul class="tot-act">
-                <li>$0.00</li>
-                <li>...</li>
+                <li class="l7">UGX. 0</li>
+                <li class="l7">...</li>
               </ul>
             </ul>
             <ul class="summary">
@@ -72,7 +72,7 @@
               <li>
                 <ul>
                   <li>Subtotal</li>
-                  <li>$0.00</li>
+                  <li>UGX. 0</li>
                 </ul>
                 <ul class="column">
                   <li><a href="#">Add discount</a></li>
@@ -80,13 +80,13 @@
                 </ul>
                 <ul class="final-total">
                   <li>Total</li>
-                  <li>$0.00</li>
+                  <li>UGX. 0</li>
                 </ul>
               </li>
             </ul>
             <div class="notes">
               <p>Notes</p>
-              <textarea name="" value="Thanks for you business!"></textarea>
+              <input type="text" name="" value="Thanks for you business!">
             </div>
           </div>
         </div>
@@ -96,16 +96,12 @@
             <button class="preview" type="button" name="button">Preview</button>
             <button class="download" type="button" name="button">Download</button>
           </div>
-          <div class="">
+          <div class="currency-sec">
             <label for="Currency">Currency</label>
             <select class="" name="currency">
-              <option value="usd">USD (United States Dollar)</option>
+              <!-- <option value="Usd">USD (United States Dollar)</option> -->
+              <option value="Ugx">UGX (Uganda Shillings)</option>
             </select>
-          </div>
-          <div class="">
-            <div>Payment method <span>toggle</span></div>
-            <div>Late fees <span>toggle</span></div>
-            <div>Notes <span>toggle</span></div>
           </div>
         </div>
       </form>

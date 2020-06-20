@@ -20,7 +20,7 @@ textarea {
 
 .date-part label,
 .date-part select {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .container {
@@ -76,7 +76,8 @@ textarea {
   border: none;
   background: #f5f7f9;
   border-radius: 4px;
-  padding: .6em .7em;
+  padding: 0 1em;
+  height: 45px;
 }
 
 .bill-from,
@@ -91,7 +92,7 @@ textarea {
 .bill-to input,
 .bill-from textarea,
 .bill-to textarea {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
   margin-bottom: .7em;
 }
@@ -112,7 +113,7 @@ select {
   list-style: none;
   justify-content: space-between;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
   margin: 1em 0;
   padding-bottom: 1em;
@@ -156,6 +157,10 @@ select {
   margin-top: 3em;
 }
 
+.tot-act li.l7 {
+  line-height: 2.7;
+}
+
 .summary li {
   width: 50%;
   text-transform: capitalize;
@@ -187,21 +192,20 @@ ul.column {
 }
 
 .notes p {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
 }
 
-.notes textarea {
+.notes input {
   width: 96%;
-  height: 15px;
 }
 
 button {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, .1);
-  height: 38px;
+  height: 45px;
   width: 100%;
   margin-bottom: 1.2em;
   border-radius: 4px;
@@ -218,4 +222,24 @@ button {
 
 .download {
   margin: 0 0 0 .5em;
+}
+
+.currency-sec {
+  margin: 1.7em 0 0 0;
+  border-top: 1px solid #dde;
+  padding: .8em 0;
+}
+
+.currency-sec label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.currency-sec select {
+  background: white;
+  margin: .7em 0 0 0;
+  height: 45px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 0 .5em;
 }
