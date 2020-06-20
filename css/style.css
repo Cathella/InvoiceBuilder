@@ -39,11 +39,15 @@ textarea {
   flex-direction: row;
 }
 
+.builder {
+  justify-content: space-between;
+}
+
 .main-form {
   background: #fff;
   border-radius: 6px;
   margin-right: 1em;
-  width: 70%;
+  width: 67%;
   padding: 2em;
 }
 
@@ -242,4 +246,8 @@ button {
   width: 100%;
   border-radius: 4px;
   padding: 0 .5em;
+}
+
+.send-part {
+  width: 25%;
 }
