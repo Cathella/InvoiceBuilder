@@ -1,0 +1,253 @@
+body {
+  background-color: #f2f3f7;
+  padding: 0;
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+form,
+select,
+input,
+button,
+textarea {
+  font-family: 'Manrope', sans-serif;
+}
+
+.date-part label,
+.date-part select {
+  font-size: 14px;
+}
+
+.container {
+  width: 80%;
+  margin: 4em auto;
+}
+
+.builder {
+  box-sizing: content-box;
+}
+
+.builder,
+.date-part,
+.billing-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.builder {
+  justify-content: space-between;
+}
+
+.main-form {
+  background: #fff;
+  border-radius: 6px;
+  margin-right: 1em;
+  width: 67%;
+  padding: 2em;
+}
+
+.date-part {
+  justify-content: space-between;
+}
+
+.main-form h1 {
+  text-align: center;
+  font-size: 23px;
+}
+
+.main-form h1 span {
+  color: #8190a0;
+}
+
+.billing-form {
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  padding: 1.6em 0;
+}
+
+.billing-form div {
+  width: 48.5%;
+}
+
+input,
+textarea {
+  border: none;
+  background: #f5f7f9;
+  border-radius: 4px;
+  padding: 0 1em;
+  height: 45px;
+}
+
+.bill-from,
+.bill-to {
+  display: flex;
+  flex-direction: column;
+}
+
+.bill-from label,
+.bill-to label,
+.bill-from input,
+.bill-to input,
+.bill-from textarea,
+.bill-to textarea {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: .7em;
+}
+
+.aside-btn {
+  display: flex;
+  flex-direction: row;
+}
+
+select {
+  border: none;
+  background: transparent;
+}
+
+.headers > ul {
+  display: flex;
+  /* align-items: center; */
+  list-style: none;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 1em 0;
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.item {
+  width: 48%;
+  /* background: green */
+}
+
+.item input {
+  width: 95%;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: .8em;
+}
+
+.qty-rate,
+.tot-act {
+  /* background: orange; */
+  display: flex;
+  list-style: none;
+  /* justify-content: space-between; */
+  width: 22%;
+}
+
+.qty-rate li,
+.tot-act li {
+  width: 50%;
+}
+
+.qty-rate li input,
+.tot-act li p {
+  width: 48.5%;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.tot-act li p{
+  margin-top: 3em;
+}
+
+.tot-act li.l7 {
+  line-height: 2.7;
+}
+
+.summary li {
+  width: 50%;
+  text-transform: capitalize;
+}
+
+.summary ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+ul.column {
+  flex-direction: column;
+}
+
+.column li {
+  margin-top: 1em;
+}
+
+.summary a {
+  text-decoration: none;
+  color: #1155cc;
+}
+
+.final-total {
+  margin: 1em 0;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  padding-top: 1em;
+}
+
+.notes p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.notes input {
+  width: 96%;
+}
+
+button {
+  font-size: 14px;
+  font-weight: bold;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, .1);
+  height: 45px;
+  width: 100%;
+  margin-bottom: 1.2em;
+  border-radius: 4px;
+}
+
+.send {
+  background: #1155cc;
+  color: #fff;
+}
+
+.preview {
+  margin: 0 .5em 0 0;
+}
+
+.download {
+  margin: 0 0 0 .5em;
+}
+
+.currency-sec {
+  margin: 1.7em 0 0 0;
+  border-top: 1px solid #dde;
+  padding: .8em 0;
+}
+
+.currency-sec label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.currency-sec select {
+  background: white;
+  margin: .7em 0 0 0;
+  height: 45px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 0 .5em;
+}
+
+.send-part {
+  width: 25%;
+}
