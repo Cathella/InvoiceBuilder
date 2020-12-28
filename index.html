@@ -4,104 +4,117 @@
     <meta charset="utf-8">
     <title>Invoice Builder</title>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="container">
-      <form class="builder">
-        <div class="main-form">
-          <div class="date-part">
-            <div class="">
-              <label for=""><strong>Date:</strong></label>
-              <select class="" name="">
-                <option value="">03/14/2020</option>
-              </select>
+    <div class="container my-5">
+      <form class="row">
+        <div class="col-md-9">
+          <div class="main-form">
+            <div class="date-part d-flex justify-content-between">
+              <div class="">
+                <label for="" class="font-weight-bold">Today's Date:</label>
+                <select class="custom-select" name="">
+                  <option value="">03/14/2020</option>
+                </select>
+              </div>
+              <div class="">
+                <label for=""><strong>Due Date:</strong></label>
+                <select class="custom-select" name="">
+                  <option value="">Select Date</option>
+                </select>
+              </div>
             </div>
-            <div class="">
-              <label for=""><strong>Due Date:</strong></label>
-              <select class="" name="">
-                <option value="">Select Date</option>
-              </select>
+            <h1 class="font-weight-bold">Invoice <span>No.</span></h1>
+            <div class="billing-form border-top border-bottom row">
+              <div class="col-md-6">
+                <div class="bill-from d-flex flex-column">
+                  <label for="">Bill from</label>
+                  <input type="text" name="email" value="" placeholder="Email">
+                  <input type="text" name="name" value="" placeholder="Who is this invoice from?">
+                </div>
+              </div>
+              <div class="bill-to col-md-6">
+                <div class="bill-to d-flex flex-column">
+                  <label for="">Bill to</label>
+                  <input type="text" name="email" value="" placeholder="Email">
+                  <input type="text" name="name" value="" placeholder="Who is this invoice to?">
+                </div>
+              </div>
             </div>
-          </div>
-          <h1>Invoice #<span>001</span></h1>
-          <div class="billing-form">
-            <div class="bill-from">
-              <label for="">Bill from</label>
-              <input type="text" name="email" value="" placeholder="Email">
-              <input type="text" name="name" value="" placeholder="Who is this invoice from?">
-            </div>
-            <div class="bill-to">
-              <label for="">Bill to</label>
-              <input type="text" name="email" value="" placeholder="Email">
-              <input type="text" name="name" value="" placeholder="Who is this invoice to?">
-            </div>
-          </div>
-          <div class="headers">
-            <ul>
-              <li class="item">item</li>
-              <ul class="qty-rate">
-                <li>qty</li>
-                <li>rate</li>
-              </ul>
-              <ul class="tot-act">
-                <li>total</li>
-                <li>action</li>
-              </ul>
-            </ul>
-            <ul>
-              <li class="item">
-                <input type="text" placeholder="Item Name" name="" value="">
-                <input type="text" placeholder="Description" name="" value="">
-              </li>
-              <ul class="qty-rate">
-                <li>
+
+            <div class="row pt-3">
+              <div class="col-md-5">
+                <div class="item">
+                  <p class="text-uppercase font-weight-bold">item</p>
+                  <input type="text" placeholder="Item Name" name="" value="">
+                  <input type="text" placeholder="Description" name="" value="">
+                  <p class="mt-2"><a href="#">Add Item</a></p>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="qty-rate">
+                  <p class="item text-uppercase font-weight-bold">qty</p>
                   <input type="text" placeholder="" name="" value="1">
-                </li>
-                <li>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="qty-rate">
+                  <p class="text-uppercase font-weight-bold">rate</p>
                   <input type="text" placeholder="" name="" value="0">
-                </li>
-              </ul>
-              <ul class="tot-act">
-                <li class="l7">UGX. 0</li>
-                <li class="l7">...</li>
-              </ul>
-            </ul>
-            <ul class="summary">
-              <li><a href="#">Add Item</a></li>
-              <li>
-                <ul>
-                  <li>Subtotal</li>
-                  <li>UGX. 0</li>
-                </ul>
-                <ul class="column">
-                  <li><a href="#">Add discount</a></li>
-                  <li><a href="#">Add tax</a></li>
-                </ul>
-                <ul class="final-total">
-                  <li>Total</li>
-                  <li>UGX. 0</li>
-                </ul>
-              </li>
-            </ul>
-            <div class="notes">
-              <p>Notes</p>
-              <input type="text" name="" value="Thanks for you business!">
+                </div>
+              </div>
+              <div class="col-md-1">
+                <p class="text-uppercase font-weight-bold">total</p>
+                <p class="pt-2">0</p>
+              </div>
+              <div class="col-md-2 text-center">
+                <p class="item text-uppercase font-weight-bold">action</p>
+                <p class="l7">...</p>
+              </div>
+            </div>
+            <div class="row border-top pt-3">
+              <div class="col-md-6 ml-auto">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="d-flex justify-content-between">
+                      <p>Subtotal</p>
+                      <p>UGX. 0</p>
+                    </div>
+                    <div class="border-bottom pb-3">
+                      <p><a href="#">Add discount</a></p>
+                      <p><a href="#">Add tax</a></p>
+                    </div>
+                    <div class="d-flex justify-content-between pt-3">
+                      <p>Total</p>
+                      <p>UGX. 0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="border-top pt-3 notes">
+                  <p>Notes</p>
+                  <input type="text" name="" value="Thanks for you business!">
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="send-part">
-          <button class="send" type="button" name="button">Send Invoice</button>
-          <div class="aside-btn">
-            <button class="preview" type="button" name="button">Preview</button>
-            <button class="download" type="button" name="button">Download</button>
-          </div>
-          <div class="currency-sec">
-            <label for="Currency">Currency</label>
-            <select class="" name="currency">
-              <!-- <option value="Usd">USD (United States Dollar)</option> -->
-              <option value="Ugx">UGX (Uganda Shillings)</option>
-            </select>
+        <div class="col-md-3">
+          <div class="send-part">
+            <button class="btn btn-primary w-100 py-2 mb-3" type="button" name="button">Send Invoice</button>
+            <div class="d-flex justify-content-between">
+              <button class="btn btn-light border w-50 py-2 mr-1" type="button" name="button">Preview</button>
+              <button class="btn btn-light border w-50 py-2 ml-1" type="button" name="button">Download</button>
+            </div>
+            <div class="currency-sec border-top pt-2 mt-5">
+              <label for="Currency" class="font-weight-bold">Currency</label>
+              <select class="custom-select" name="currency">
+                <option value="Ugx">UGX (Uganda Shillings)</option>
+              </select>
+            </div>
           </div>
         </div>
       </form>
